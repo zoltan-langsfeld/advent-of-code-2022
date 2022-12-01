@@ -15,6 +15,6 @@ public class DayOneTaskSolverA {
     static int findMax(String rawData) {
         return Arrays.stream(rawData.split("\\n\\n", 0))
                 .map((line -> Arrays.stream(line.split("\\n", 0))
-                        .mapToInt(Integer::parseInt).sum())).mapToInt(value -> value).max().getAsInt();
+                        .mapToInt(Integer::parseInt).sum())).mapToInt(value -> value).max().orElse(0);
     }
 }
