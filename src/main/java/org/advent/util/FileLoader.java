@@ -16,7 +16,7 @@ public class FileLoader {
             final var path = Paths.get(resource.toURI());
             return Files.readString(path);
         } catch (Exception e) {
-            logger.error("An exception has occured while reading the file.", e);
+            logger.error("An exception has occurred while reading the file.", e);
         }
         return "";
     }
