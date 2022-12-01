@@ -1,4 +1,4 @@
-<Configuration status="debug" name="baeldung" packages="">
+<Configuration status="debug" name="advent_of_code_2022" packages="">
     <Root level="error">
         <AppenderRef ref="stdout"/>
     </Root>
