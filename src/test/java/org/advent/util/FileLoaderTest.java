@@ -1,5 +1,6 @@
-package org.advent.day1.task1;
+package org.advent.util;
 
+import org.advent.util.FileLoader;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

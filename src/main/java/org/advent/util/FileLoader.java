@@ -1,4 +1,4 @@
-package org.advent.day1.task1;
+package org.advent.util;
 
 import java.io.FileInputStream;
 import java.io.IOException;
