@@ -7,7 +7,7 @@ import java.util.List;
 
 public class DayOneTaskSolver {
 
-    private List<Integer> preprocessedData;
+    private final List<Integer> preprocessedData;
 
     public DayOneTaskSolver(String pathToInputData) {
         final var rawData = FileLoader.loadFile(pathToInputData);
