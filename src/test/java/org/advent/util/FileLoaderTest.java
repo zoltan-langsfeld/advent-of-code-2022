@@ -10,7 +10,7 @@ class FileLoaderTest {
     @Test
     void shouldLoadString() {
         // when
-        String fileContent = FileLoader.loadFile("src/test/resources/test_input.txt");
+        String fileContent = FileLoader.loadFile("test_input.txt");
 
         // then
         assertEquals("hello world!", fileContent);

@@ -1,21 +1,22 @@
 package org.advent.util;
 
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.nio.charset.StandardCharsets;
-
-import org.apache.commons.io.IOUtils;
+import org.advent.day1.task1.DayOneTaskSolverA;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+
+import java.nio.file.Files;
+import java.nio.file.Paths;
 
 public class FileLoader {
     private static final Logger logger = LogManager.getLogger(FileLoader.class);
 
     public static String loadFile(String fileName) {
-        try (FileInputStream inputStream = new FileInputStream(fileName)) {
-            return IOUtils.toString(inputStream, StandardCharsets.UTF_8);
-        } catch (IOException e) {
-            logger.error("An exception occurred while loading the file", e);
+        try {
+            final var resource = FileLoader.class.getResource(fileName);
+            final var path = Paths.get(resource.toURI());
+            return Files.readString(path);
+        } catch (Exception e) {
+            logger.error("An exception has occured while reading the file.", e);
         }
         return "";
     }
