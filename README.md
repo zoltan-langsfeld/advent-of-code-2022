@@ -3,7 +3,7 @@
 This repository contains the solutions for the challenges found under the Advent of Code 2022 project.
 
 My goal was not to find the fastest solution, but rather to simulate some challenges one has to
-solve in a production-ready software.
+solve in a production-ready environment.
 
 Production-ready attributes:
 
