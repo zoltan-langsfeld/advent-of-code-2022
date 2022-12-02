@@ -1,4 +1,4 @@
-package org.advent.day1;
+package org.advent.solver.day1;
 
 import org.advent.util.FileLoader;
 

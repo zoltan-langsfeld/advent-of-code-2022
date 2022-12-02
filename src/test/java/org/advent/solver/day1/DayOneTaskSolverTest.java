@@ -1,4 +1,4 @@
-package org.advent.day1;
+package org.advent.solver.day1;
 
 import org.junit.jupiter.api.Test;
 
@@ -9,7 +9,7 @@ class DayOneTaskSolverTest {
     @Test
     void shouldFindMax() {
         // given
-        final var dayOneTaskSolver = new DayOneTaskSolver("/org/advent/day1/day_1_test_input.txt");
+        final var dayOneTaskSolver = new DayOneTaskSolver("/org/advent/solver/day_1_test_input.txt");
 
         // when
         final var calculatedMax = dayOneTaskSolver.solveTaskA();
@@ -21,7 +21,7 @@ class DayOneTaskSolverTest {
     @Test
     void shouldFindTop3() {
         // given
-        final var dayOneTaskSolver = new DayOneTaskSolver("/org/advent/day1/day_1_test_input.txt");
+        final var dayOneTaskSolver = new DayOneTaskSolver("/org/advent/solver/day_1_test_input.txt");
 
         // when
         final var sumOfTop3 = dayOneTaskSolver.solveTaskB();
