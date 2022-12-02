@@ -6,11 +6,10 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class DayTwoTaskSolverTest {
 
+    static final DayTwoTaskSolver dayTwoTaskSolver = new DayTwoTaskSolver("/org/advent/solver/day_2_test_input.txt");
+
     @Test
     void shouldSolveTaskA() {
-        // given
-        final var dayTwoTaskSolver = new DayTwoTaskSolver("/org/advent/solver/day_2_test_input.txt");
-
         // when
         final var actualResult = dayTwoTaskSolver.solveTaskA();
 
@@ -20,5 +19,10 @@ class DayTwoTaskSolverTest {
 
     @Test
     void shouldSolveTaskB() {
+        // when
+        final var actualResult = dayTwoTaskSolver.solveTaskB();
+
+        // then
+        assertEquals(12, actualResult);
     }
 }
