@@ -60,7 +60,7 @@ public class DayThreeTaskSolver {
         return sum;
     }
 
-    public int getPriority(char ch) {
+    private int getPriority(char ch) {
         int intValueOfChar = (int) ch;
         if (intValueOfChar <= 122 & intValueOfChar >= 97) {
             return ((int) ch - 96);
