@@ -2,22 +2,31 @@
 
 This repository contains the solutions for the challenges found under the Advent of Code 2022 project.
 
-My goal was not to find the fastest solution, but rather to simulate some challenges one has to
-solve in a production-ready environment.
+Initially, I wanted to do software engineering instead of purely programming to solve the tasks. It turned out that the
+former approach took too much of my time, so on day 3 I decided to focus on speed rather than on maintainability.
 
-Production-ready attributes:
+**Software Engineering**
 
-* TDD
-* Module reusability
-* Clean-code principles
+Software Engineering can be defined as programming in the function of time.
 
-Missing production-ready attributes:
+Key attributes:
 
-* Proper error handling & testing the non-happy path
-* Modules are not always easily extendable
-* Separate text-based configuration
+* Scalability
+* Testing
+* Gracious error handling
+* Modularity
+* Extensibility
+* Readibility
 
-I put a comment where I thought there would be place for improvement if the code were used in production.
+**Programming**
+
+* The goal is mostly solving a task quickly without considering the lifespan of the code.
+* The points listed under Software Engineering are not important other than having a simple unit test to be able to
+  debug the program.
+
+You can read more about the definitions in the
+book [Software Engineering @ Google](https://books.google.de/books/about/Software_Engineering_at_Google.html?id=YhUyzgEACAAJ&redir_esc=y)
+.
 
 ## Prerequisites
 
