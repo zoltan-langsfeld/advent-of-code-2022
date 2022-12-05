@@ -4,6 +4,7 @@ import org.advent.solver.day1.DayOneTaskSolver;
 import org.advent.solver.day2.DayTwoTaskSolver;
 import org.advent.solver.day3.DayThreeTaskSolver;
 import org.advent.solver.day4.DayFourTaskSolver;
+import org.advent.solver.day5.Day5TaskSolver;
 
 public class Main {
 
@@ -28,5 +29,10 @@ public class Main {
         final var dayFourTaskSolver = new DayFourTaskSolver("/org/advent/solver/day_4_input.txt");
         System.out.printf("In how many assignment pairs does one range fully contain the other? Answer: %s%n", dayFourTaskSolver.solveTaskA());
         System.out.printf("In how many assignment pairs do the ranges overlap? Answer: %s%n", dayFourTaskSolver.solveTaskB());
+
+        System.out.println("---------Day 5---------");
+        final var day5TaskSolver = new Day5TaskSolver("/org/advent/solver/day_5_input.txt");
+        System.out.printf("After the rearrangement procedure completes, what crate ends up on top of each stack? Answer: %s%n", day5TaskSolver.solveTaskA());
+        System.out.printf("After the rearrangement procedure completes, what crate ends up on top of each stack? In this case we're using CrateMover 9001 Answer: %s%n", day5TaskSolver.solveTaskB());
     }
 }
