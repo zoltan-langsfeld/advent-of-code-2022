@@ -21,8 +21,7 @@ Key attributes:
 **Programming**
 
 * The goal is mostly solving a task quickly without considering the lifespan of the code.
-* The points listed under Software Engineering are not important other than having a simple unit test to be able to
-  debug the program.
+* The points listed under Software Engineering are not as important when one just simply programs.
 
 You can read more about the definitions in the
 book [Software Engineering @ Google](https://books.google.de/books/about/Software_Engineering_at_Google.html?id=YhUyzgEACAAJ&redir_esc=y)
