@@ -1,6 +1,6 @@
 package org.advent;
 
-import org.advent.solver.day7.Day7TaskSolver;
+import org.advent.solver.day8.Day8TaskSolver;
 
 public class Main {
 
@@ -31,9 +31,14 @@ public class Main {
 //        System.out.printf("After the rearrangement procedure completes, what crate ends up on top of each stack? Answer: %s%n", day5TaskSolver.solveTaskA());
 //        System.out.printf("After the rearrangement procedure completes, what crate ends up on top of each stack? In this case we're using CrateMover 9001 Answer: %s%n", day5TaskSolver.solveTaskB());
 
-        System.out.println("---------Day 7---------");
-        final var day7TaskSolver = new Day7TaskSolver("/org/advent/solver/day_7_input.txt");
-        System.out.printf("Find all of the directories with a total size of at most 100000. What is the sum of the total sizes of those directories? Answer: %s%n", day7TaskSolver.solveA());
-        System.out.printf("Find the smallest directory that, if deleted, would free up enough space on the filesystem to run the update. What is the total size of that directory? Answer: %s%n", day7TaskSolver.solveB());
+//        System.out.println("---------Day 7---------");
+//        final var day7TaskSolver = new Day7TaskSolver("/org/advent/solver/day_7_input.txt");
+//        System.out.printf("Find all of the directories with a total size of at most 100000. What is the sum of the total sizes of those directories? Answer: %s%n", day7TaskSolver.solveA());
+//        System.out.printf("Find the smallest directory that, if deleted, would free up enough space on the filesystem to run the update. What is the total size of that directory? Answer: %s%n", day7TaskSolver.solveB());
+
+        System.out.println("---------Day 8---------");
+        final var day8TaskSolver = new Day8TaskSolver("/org/advent/solver/day_8_input.txt");
+        System.out.printf("Consider your map; how many trees are visible from outside the grid? Answer: %s%n", day8TaskSolver.solveA());
+        System.out.printf("Consider each tree on your map. What is the highest scenic score possible for any tree? Answer: %s%n", day8TaskSolver.solveB());
     }
 }
